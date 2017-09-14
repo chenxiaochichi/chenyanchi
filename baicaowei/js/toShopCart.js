@@ -3,7 +3,7 @@ window.onload = function(){
 	var data = {
 		arr : []
 	}
-	ajaxGet("http://127.0.0.1/baicaowei/same.json",function(str){
+	ajaxGet("same.json",function(str){
 		var arr = JSON.parse(str);
 		data.arr = arr;
 		var html = template("shoplist",data);
