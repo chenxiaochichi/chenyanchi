@@ -10,7 +10,7 @@ var index = 1;
 var pageNum = 24;
 showData();
 function showData(){
-	ajaxGet("http://127.0.0.1/baicaowei/allgoods.json",fn);
+	ajaxGet("allgoods.json",fn);
 	function fn(res){
 		var arr = JSON.parse(res);
 		var str = "";
