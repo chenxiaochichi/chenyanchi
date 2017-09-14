@@ -2,7 +2,7 @@
 $(function(){
 	$.ajax({
 		type:"get",
-		url:"particulars.json",
+		url:"../particulars.json",
 		success : function(res){
 			var str = "";
 			for( var i in res ){
