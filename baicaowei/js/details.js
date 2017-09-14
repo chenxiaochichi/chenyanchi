@@ -3,7 +3,7 @@ window.onload = function(){
 	//http://127.0.0.1/baicaowei/details.html?pid=shop01
 	var brr = href.split("?")[1];
 	var pid = brr.split("=")[1];
-	ajaxGet("http://127.0.0.1/baicaowei/particulars.json",function(res){
+	ajaxGet("particulars.json",function(res){
 		var arr = JSON.parse(res);	
 		var str = "";
 		var ch = "";
@@ -134,7 +134,7 @@ $(window).scroll(function(){
 $(function(){
 	$.ajax({
 		type:"get",
-		url:"http://127.0.0.1/baicaowei/data.json",
+		url:"data.json",
 		success : function(arr){
 			var str = "";
 			for( var i in arr ){
