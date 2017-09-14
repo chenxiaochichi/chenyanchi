@@ -134,7 +134,7 @@ $(window).scroll(function(){
 $(function(){
 	$.ajax({
 		type:"get",
-		url:"data.json",
+		url:"../data.json",
 		success : function(arr){
 			var str = "";
 			for( var i in arr ){
